@@ -1,0 +1,123 @@
+/**===============================
+ * Author 	: Singgih Saputro
+ * Email 	: singgih@wonderlabs.io
+ * Title 	: Singgih Portofolio
+ * Version 	: 1.0
+ * ===============================
+ **/
+@import url(bootstrap.min.css);
+@import url(font-awesome.min.css);
+/**===============================
+ * COMPONENTS
+ * ===============================
+ **/
+@import "https://fonts.googleapis.com/css?family=Open+Sans:300,400|Raleway:100,400,600";
+.container {
+  max-width: 1100px; }
+
+body {
+  color: #161e26;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased; }
+
+.parallax-window {
+  min-height: 700px;
+  background: transparent; }
+
+/**===============================
+ * LAYOUTS
+ * ===============================
+ **/
+header .navbar {
+  background-color: #171717;
+  border: none; }
+  header .navbar ul {
+    margin-bottom: 0px; }
+    header .navbar ul.navbar-top {
+      text-transform: uppercase; }
+      header .navbar ul.navbar-top li {
+        display: inline-block;
+        padding: 20px; }
+        header .navbar ul.navbar-top li a {
+          color: #fff;
+          font-weight: 300; }
+
+/**===============================
+ * SECTION
+ * ===============================
+ **/
+.banner .box-name {
+  position: absolute;
+  width: 60%;
+  top: 34%;
+  right: 12%;
+  text-align: right;
+  color: #171717;
+  font-family: "Raleway", sans-serif; }
+  .banner .box-name h3 {
+    font-size: 44px;
+    font-weight: 100; }
+  .banner .box-name h1 {
+    font-size: 64px;
+    font-weight: 400;
+    margin-top: 10px; }
+  .banner .box-name p {
+    font-size: 24px;
+    font-weight: 100; }
+
+/**===============================
+ * RESPONSIVE
+ * ===============================
+ **/
+/*-----------------------*/
+/*START: 320px*/
+/*-----------------------*/
+@media (min-width: 200px) and (max-width: 360px) {
+  /*----- RESPONSIVE UTILITIES -----*/
+  .hidden-mobile {
+    display: none !important; }
+  .visible-mobile {
+    visibility: visible !important; }
+  .visible-desktop {
+    display: none !important; } }
+
+/*-----------------------*/
+/*START: 360px*/
+/*-----------------------*/
+@media (min-width: 360px) and (max-width: 767px) {
+  /*----- RESPONSIVE UTILITIES -----*/
+  .hidden-mobile {
+    display: none !important; }
+  .visible-mobile {
+    visibility: visible !important; }
+  .visible-desktop {
+    display: none !important; }
+  /*----- HEADER -----*/
+  /*----- SECTION -----*/
+  /*----- FOOTER -----*/ }
+
+/*-----------------------*/
+/*START: 768px*/
+/*-----------------------*/
+@media (min-width: 768px) and (max-width: 992px) {
+  /*----- RESPONSIVE UTILITIES -----*/
+  .hidden-mobile {
+    visibility: visible !important; }
+  .visible-mobile {
+    display: none !important; }
+  .visible-desktop {
+    display: none !important; } }
+
+/*-----------------------*/
+/*START: 992 DESKTOP*/
+/*-----------------------*/
+@media (min-width: 992px) {
+  /*----- RESPONSIVE UTILITIES -----*/
+  .visible-mobile {
+    display: none !important; }
+  .visible-desktop {
+    visibility: visible !important; }
+  .container {
+    width: 96%; } }
