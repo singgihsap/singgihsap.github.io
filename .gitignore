@@ -1,2 +1,3 @@
-./sass
-./node_modules
+/sass
+/package.json
+/node_modules
