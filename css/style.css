@@ -75,8 +75,9 @@ header .navbar {
       text-transform: uppercase; }
       header .navbar ul.navbar-top li {
         display: inline-block;
-        padding: 20px; }
+        padding: 20px 0px; }
         header .navbar ul.navbar-top li a {
+          padding: 20px;
           color: #fff;
           font-weight: 300;
           font-family: "Open Sans", sans-serif; }
