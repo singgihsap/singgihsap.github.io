@@ -477,32 +477,13 @@ footer {
     visibility: visible !important; }
   .visible-desktop {
     display: none !important; }
-  /*----- SECTION -----*/
-  .banner .box-name {
-    width: 80%;
-    top: 30%;
-    right: 8%; }
-    .banner .box-name h3 {
-      font-size: 24px; }
-    .banner .box-name h1 {
-      font-size: 46px; }
-    .banner .box-name p {
-      font-size: 18px; }
-  .profile__images img {
-    width: 80%; } }
-
-/*-----------------------*/
-/*START: 360px*/
-/*-----------------------*/
-@media (min-width: 360px) and (max-width: 767px) {
-  /*----- RESPONSIVE UTILITIES -----*/
-  .hidden-mobile {
-    display: none !important; }
-  .visible-mobile {
-    visibility: visible !important; }
-  .visible-desktop {
-    display: none !important; }
+  .container {
+    width: 100% !important; }
   /*----- HEADER -----*/
+  header .navbar.navbar-home a.navbar-brand {
+    color: #171717; }
+  header .navbar.navbar-default a.navbar-brand {
+    color: #fff; }
   /*----- SECTION -----*/
   .banner .box-name {
     width: 80%;
@@ -516,6 +497,74 @@ footer {
       font-size: 18px; }
   .profile__images img {
     width: 80%; }
+  .experience__resume .resume__item {
+    margin-bottom: 40px; }
+    .experience__resume .resume__item .panel {
+      width: 100%;
+      margin-left: 0px;
+      padding-top: 25px; }
+      .experience__resume .resume__item .panel .collapse {
+        display: block; }
+    .experience__resume .resume__item .item__year {
+      top: 0px;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+    .experience__resume .resume__item .item__btn {
+      display: none; }
+  .portofolio #portofolio .og-grid img {
+    width: 100%; } }
+
+/*-----------------------*/
+/*START: 360px*/
+/*-----------------------*/
+@media (min-width: 360px) and (max-width: 767px) {
+  /*----- RESPONSIVE UTILITIES -----*/
+  .hidden-mobile {
+    display: none !important; }
+  .visible-mobile {
+    visibility: visible !important; }
+  .visible-desktop {
+    display: none !important; }
+  .container {
+    width: 100% !important; }
+  /*----- HEADER -----*/
+  header .navbar.navbar-home a.navbar-brand {
+    color: #171717; }
+  header .navbar.navbar-default a.navbar-brand {
+    color: #fff; }
+  /*----- SECTION -----*/
+  .banner .box-name {
+    width: 80%;
+    top: 30%;
+    right: 8%; }
+    .banner .box-name h3 {
+      font-size: 24px; }
+    .banner .box-name h1 {
+      font-size: 46px; }
+    .banner .box-name p {
+      font-size: 18px; }
+  .profile__images img {
+    width: 80%; }
+  .profile__content {
+    margin-bottom: 60px;
+    padding-left: 10px;
+    padding-right: 10px; }
+  .experience__resume .resume__item {
+    margin-bottom: 40px; }
+    .experience__resume .resume__item .panel {
+      width: 100%;
+      margin-left: 0px;
+      padding-top: 25px; }
+      .experience__resume .resume__item .panel .collapse {
+        display: block; }
+    .experience__resume .resume__item .item__year {
+      top: 0px;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+    .experience__resume .resume__item .item__btn {
+      display: none; }
+  .portofolio #portofolio .og-grid img {
+    width: 100%; }
   /*----- FOOTER -----*/ }
 
 /*-----------------------*/
@@ -529,6 +578,8 @@ footer {
     display: none !important; }
   .visible-desktop {
     display: none !important; }
+  .container {
+    width: 100% !important; }
   /*----- SECTION -----*/
   .banner .box-name {
     width: 80%;
