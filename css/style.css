@@ -511,7 +511,7 @@ footer {
       transform: translate(-50%, -50%); }
     .experience__resume .resume__item .item__btn {
       display: none; }
-  .portofolio #portofolio .og-grid img {
+  .portofolio #portofolio .og-grid li a img {
     width: 100%; } }
 
 /*-----------------------*/
@@ -563,7 +563,7 @@ footer {
       transform: translate(-50%, -50%); }
     .experience__resume .resume__item .item__btn {
       display: none; }
-  .portofolio #portofolio .og-grid img {
+  .portofolio #portofolio .og-grid li a img {
     width: 100%; }
   /*----- FOOTER -----*/ }
 
