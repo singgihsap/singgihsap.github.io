@@ -476,7 +476,20 @@ footer {
   .visible-mobile {
     visibility: visible !important; }
   .visible-desktop {
-    display: none !important; } }
+    display: none !important; }
+  /*----- SECTION -----*/
+  .banner .box-name {
+    width: 80%;
+    top: 30%;
+    right: 8%; }
+    .banner .box-name h3 {
+      font-size: 24px; }
+    .banner .box-name h1 {
+      font-size: 46px; }
+    .banner .box-name p {
+      font-size: 18px; }
+  .profile__images img {
+    width: 80%; } }
 
 /*-----------------------*/
 /*START: 360px*/
@@ -491,6 +504,18 @@ footer {
     display: none !important; }
   /*----- HEADER -----*/
   /*----- SECTION -----*/
+  .banner .box-name {
+    width: 80%;
+    top: 30%;
+    right: 8%; }
+    .banner .box-name h3 {
+      font-size: 24px; }
+    .banner .box-name h1 {
+      font-size: 46px; }
+    .banner .box-name p {
+      font-size: 18px; }
+  .profile__images img {
+    width: 80%; }
   /*----- FOOTER -----*/ }
 
 /*-----------------------*/
@@ -503,7 +528,11 @@ footer {
   .visible-mobile {
     display: none !important; }
   .visible-desktop {
-    display: none !important; } }
+    display: none !important; }
+  /*----- SECTION -----*/
+  .banner .box-name {
+    width: 80%;
+    top: 30%; } }
 
 /*-----------------------*/
 /*START: 992 DESKTOP*/
