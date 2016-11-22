@@ -497,6 +497,10 @@ footer {
       font-size: 18px; }
   .profile__images img {
     width: 80%; }
+  .profile__content {
+    margin-bottom: 60px;
+    padding-left: 10px;
+    padding-right: 10px; }
   .experience__resume .resume__item {
     margin-bottom: 40px; }
     .experience__resume .resume__item .panel {
