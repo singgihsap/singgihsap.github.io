@@ -40,3 +40,13 @@ smoothScroll.init({
 		}
 	}
 });
+
+$(document).ready(function() {
+    $("html").niceScroll({
+		smoothscroll: true,
+		bouncescroll: true,
+		cursorcolor: "#d8d8d8",
+		mousescrollstep: 60,
+		cursorborder: "0px solid #fff"
+	});
+});
