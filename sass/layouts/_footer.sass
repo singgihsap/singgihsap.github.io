@@ -1,0 +1,73 @@
+footer
+    background-color: $black
+    padding: 15px
+    position: relative
+
+    a.to-top
+        position: absolute
+        background-color: $white
+        font-size: 40px
+        color: $asphalt
+        line-height: 1.5em
+        top: 0%
+        left: 50%
+        transform: translate(-50%, -50%)
+        text-align: center
+        width: 60px
+        height: 60px
+        +border-radius(100%)
+
+    .footer-box
+        text-align: center
+        margin:
+            top: 6%
+            bottom: 2%
+
+        ul
+            li
+                display: inline-block
+                width: 40px
+                height: 40px
+                border-radius: 4px
+                border: thin solid $grey
+                margin-left: 5px
+                margin-bottom: 10px
+                background-color: $grey
+
+                &:hover
+                    border: thin solid transparent
+
+                    &.facebook
+                        background-color: #3b5999
+
+                    &.youtube
+                        background-color: #cd201f
+
+                    &.twitter
+                        background-color: #55acee
+
+                    &.g-plus
+                        background-color: #dd4b39
+
+                    &.instagram
+                        background-color: #547fa3
+
+                    &.linked-in
+                        background-color: #007bb6
+
+                    &.github
+                        background-color: #333333
+
+                    a
+                        color: $white
+
+                a
+                    display: block
+                    text-align: center
+                    padding: 5px 0px
+                    font-size: 20px
+                    color: $asphalt
+
+        p
+            +fonts('Open Sans')
+            color: $white

@@ -1,0 +1,44 @@
+// IMPORT FONTS
+@import "https://fonts.googleapis.com/css?family=Open+Sans:300,400|Raleway:100,400,600"
+
+// MIXIN FONTS
+=fonts($fonts)
+    font-family: $fonts, sans-serif
+
+// MIXIN TRANSITION
+=transition($transition)
+    -webkit-transition: all $transition ease-in-out
+    -moz-transition: all $transition ease-in-out
+    -o-transition: all $transition ease-in-out
+    transition: all $transition ease-in-out
+
+// MIXIN BORDER RADIUS
+=border-radius($border-radius)
+    -webkit-border-radius: $border-radius
+    -moz-border-radius: $border-radius
+    -o-border-radius: $border-radius
+    border-radius: $border-radius
+
+// MIXIN BOX SHADOW
+=box-shadow($color)
+    -webkit-box-shadow: $color
+    -moz-box-shadow: $color
+    -o-box-shadow: $color
+    box-shadow: $color
+
+// MIXIN BEM (Block Element Modifier)
+=element($element)
+    &__#{$element}
+        @content
+
+=modifier($modifier)
+    &--#{$modifier}
+        @content
+
+// VARIABLES
+$margin: 20px
+$padding: 20px
+
+// CONTAINER
+.container
+    max-width: 1100px

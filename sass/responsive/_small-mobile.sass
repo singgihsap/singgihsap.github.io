@@ -1,0 +1,88 @@
+/*-----------------------*/
+/*START: 320px*/
+/*-----------------------*/
+@media (min-width: 200px) and (max-width: 360px)
+    /*----- RESPONSIVE UTILITIES -----*/
+    .hidden-mobile
+        display: none !important
+
+    .visible-mobile
+        visibility: visible !important
+
+    .visible-desktop
+        display: none !important
+
+    .container
+        width: 100% !important
+
+    /*----- HEADER -----*/
+    header
+        .navbar
+            &.navbar-home
+                a
+                    &.navbar-brand
+                        color: $black
+
+            &.navbar-default
+                a
+                    &.navbar-brand
+                        color: $white
+
+
+    /*----- SECTION -----*/
+    .banner
+        .box-name
+            width: 80%
+            top: 30%
+            right: 8%
+
+            h3
+                font-size: 24px
+
+            h1
+                font-size: 46px
+
+            p
+                font-size: 18px
+
+    .profile
+        +element('images')
+            img
+                width: 80%
+
+        +element('content')
+            margin-bottom: 60px
+            padding:
+                left: 10px
+                right: 10px
+
+    .experience
+        +element('resume')
+            .resume
+                +element('item')
+                    margin-bottom: 40px
+
+                    .panel
+                        width: 100%
+                        margin-left: 0px
+                        padding-top: 25px
+
+                        .collapse
+                            display: block
+
+                    .item
+                        +element('year')
+                            top: 0px
+                            left: 50%
+                            transform: translate(-50%, -50%)
+
+                        +element('btn')
+                            display: none
+
+    .portofolio
+        #portofolio
+            .og-grid
+                li
+                    a
+                        img
+                            width: 100%
