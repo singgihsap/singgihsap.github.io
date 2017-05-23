@@ -10,14 +10,25 @@ $(function(){
         'items' :
         [
             {
+                'title'         : 'Launchpad Ecosystem',
+                'description'   : 'The Densiest Startup Ecoystem in The World',
+                'thumbnail'     : ['images/small/lcpd.png', 'images/small/lcpd.png'],
+                'large'         : ['images/large/lcpd.png', 'images/large/lcpd.png'],
+                'button_list'   :
+                [
+                    { 'title':'View', 'url' : 'http://launchpad.wonderlabs.io/' }
+                ],
+                'tags'          : ['Portrait']
+            },
+            {
                 'title'         : 'Make A Wish Singapore',
                 'description'   : 'Make-A-Wish Foundation Singapore grants the wishes of children with life-threatening illnesses.',
                 'thumbnail'     : ['images/small/mawsg.png', 'images/small/mawsg.png'],
                 'large'         : ['images/large/mawsg.png', 'images/large/mawsg.png'],
                 'button_list'   :
-                [
-                    { 'title':'View', 'url' : 'http://makeawish.org.sg/' }
-                ],
+                    [
+                        { 'title':'View', 'url' : 'http://makeawish.org.sg/' }
+                    ],
                 'tags'          : ['Portrait']
             },
             {
