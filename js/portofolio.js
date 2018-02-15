@@ -10,14 +10,36 @@ $(function(){
         'items' :
         [
             {
+                'title'         : 'Piquelabs Learning Center',
+                'description'   : 'Piquelabs Learning Center',
+                'thumbnail'     : ['images/small/piquelabs-sm.png', 'images/small/piquelabs-sm.png'],
+                'large'         : ['images/large/piquelabs-lg.png', 'images/large/piquelabs-lg.png'],
+                'button_list'   :
+                [
+                    { 'title':'View', 'url' : 'http://piquehosted.com/' }
+                ],
+                'tags'          : ['Portrait']
+            },
+            {
+                'title'         : 'SMUpreneurs BizHub',
+                'description'   : 'SMUpreneurs BizHub',
+                'thumbnail'     : ['images/small/bizhub-sm.png', 'images/small/bizhub-sm.png'],
+                'large'         : ['images/large/bizhub-lg.png', 'images/large/bizhub-lg.png'],
+                'button_list'   :
+                    [
+                        { 'title':'View', 'url' : 'http://bizhub.smupreneurs.com/' }
+                    ],
+                'tags'          : ['Portrait']
+            },
+            {
                 'title'         : 'Launchpad Ecosystem',
                 'description'   : 'The Densiest Startup Ecoystem in The World',
                 'thumbnail'     : ['images/small/lcpd.png', 'images/small/lcpd.png'],
                 'large'         : ['images/large/lcpd.png', 'images/large/lcpd.png'],
                 'button_list'   :
-                [
-                    { 'title':'View', 'url' : 'http://launchpad.wonderlabs.io/' }
-                ],
+                    [
+                        { 'title':'View', 'url' : 'http://launchpad.wonderlabs.io/' }
+                    ],
                 'tags'          : ['Portrait']
             },
             {
@@ -47,10 +69,7 @@ $(function(){
                 'description'   : 'Asosiation Gudeg in Yogyakarta',
                 'thumbnail'     : ['images/small/gudeg.png', 'images/small/gudeg.png'],
                 'large'         : ['images/large/gudeg.png', 'images/large/gudeg.png'],
-                'button_list'   :
-                [
-                    { 'title':'View', 'url' : 'http://www.gudegaspeg.com/' }
-                ],
+                'button_list'   : [],
                 'tags'          : ['Vintage']
             },
             {
