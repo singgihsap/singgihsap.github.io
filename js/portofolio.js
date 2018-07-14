@@ -38,7 +38,7 @@ $(function(){
                 'large'         : ['images/large/lcpd.png', 'images/large/lcpd.png'],
                 'button_list'   :
                     [
-                        { 'title':'View', 'url' : 'http://launchpad.wonderlabs.io/' }
+                        { 'title':'View', 'url' : 'http://launchpad.techsg.io/' }
                     ],
                 'tags'          : ['Portrait']
             },
