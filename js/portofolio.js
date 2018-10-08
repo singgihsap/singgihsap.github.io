@@ -10,14 +10,25 @@ $(function(){
         'items' :
         [
             {
+                'title'         : 'Leanlaunchpad',
+                'description'   : 'Leanlaunchpad',
+                'thumbnail'     : ['images/small/lean-sm.png', 'images/small/lean-sm.png'],
+                'large'         : ['images/large/lean-lg.png', 'images/large/lean-lg.png'],
+                'button_list'   :
+                [
+                    { 'title':'View', 'url' : 'https://leanlaunchpad.io/' }
+                ],
+                'tags'          : ['Portrait']
+            },
+            {
                 'title'         : 'Piquelabs Learning Center',
                 'description'   : 'Piquelabs Learning Center',
                 'thumbnail'     : ['images/small/piquelabs-sm.png', 'images/small/piquelabs-sm.png'],
                 'large'         : ['images/large/piquelabs-lg.png', 'images/large/piquelabs-lg.png'],
                 'button_list'   :
-                [
-                    { 'title':'View', 'url' : 'http://piquehosted.com/' }
-                ],
+                    [
+                        { 'title':'View', 'url' : 'http://piquehosted.com/' }
+                    ],
                 'tags'          : ['Portrait']
             },
             {
