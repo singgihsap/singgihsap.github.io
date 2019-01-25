@@ -1,144 +1,144 @@
 .experience
-    margin-bottom: 5%
+  margin-bottom: 5%
 
-    h3
-        &.heading-experience
-            margin-top: 0px
+  h3
+    &.heading-experience
+      margin-top: 0px
 
-    +element('resume')
+  +element('resume')
+    position: relative
+    margin-top: 30px
+    margin-bottom: 60px
+
+    .panel-heading
+      padding: 0px 15px
+
+    .resume
+      +element('item')
         position: relative
-        margin-top: 30px
-        margin-bottom: 60px
+        margin-bottom: 20px
 
-        .panel-heading
-            padding: 0px 15px
+        &:last-child
+          margin-bottom: 0px
 
-        .resume
-            +element('item')
-                position: relative
-                margin-bottom: 20px
+          &:before
+            display: none
 
-                &:last-child
-                    margin-bottom: 0px
+        .panel
+          width: calc(100% - 210px)
+          margin-left: 210px
+          padding: 10px
+          background: transparent
+          border: 1px solid #6e6e6e
+          border-radius: 4px
 
-                    &:before
-                        display: none
+          p
+            margin: 0px
 
-                .panel
-                    width: calc(100% - 210px)
-                    margin-left: 210px
-                    padding: 10px
-                    background: transparent
-                    border: 1px solid #6e6e6e
-                    border-radius: 4px
+          h5
+            margin-top: 0px
+            opacity: 0.6
 
-                    p
-                        margin: 0px
+          ul
+            margin-left: 20px
 
-                    h5
-                        margin-top: 0px
-                        opacity: 0.6
+          +element('title')
+            h4
+              font-weight: 600
+              text-transform: uppercase
+              +fonts('Raleway')
 
-                    ul
-                        margin-left: 20px
+        .item
+          +element('year')
+            position: absolute
+            top: 0
+            left: 0
+            margin: 0
+            display: block
+            width: 120px
+            height: 40px
+            margin-bottom: -20px
+            margin-right: auto
+            margin-left: auto
+            line-height: 40px
+            background-color: $grey
+            text-align: center
+            font-weight: 700
+            text-transform: uppercase
+            border-radius: 4px
+            color: $asphalt
+            font-weight: bold
+            +fonts('Open Sans')
 
-                    +element('title')
-                        h4
-                            font-weight: 600
-                            text-transform: uppercase
-                            +fonts('Raleway')
+          +element('btn')
+            position: absolute
+            z-index: 5
+            top: 0
+            left: 150px
+            width: 40px
+            height: 40px
+            background-color: $grey
+            border-radius: 4px
 
-                .item
-                    +element('year')
-                        position: absolute
-                        top: 0
-                        left: 0
-                        margin: 0
-                        display: block
-                        width: 120px
-                        height: 40px
-                        margin-bottom: -20px
-                        margin-right: auto
-                        margin-left: auto
-                        line-height: 40px
-                        background-color: $grey
-                        text-align: center
-                        font-weight: 700
-                        text-transform: uppercase
-                        border-radius: 4px
-                        color: $asphalt
-                        font-weight: bold
-                        +fonts('Open Sans')
+            a
+              display: block
+              position: absolute
+              z-index: 10
+              top: 0
+              left: 0
+              width: 40px
+              height: 40px
 
-                    +element('btn')
-                        position: absolute
-                        z-index: 5
-                        top: 0
-                        left: 150px
-                        width: 40px
-                        height: 40px
-                        background-color: $grey
-                        border-radius: 4px
+              &:before
+                display: block
+                position: absolute
+                z-index: 15
+                content: '-'
+                top: 2px
+                left: 0
+                width: 40px
+                height: 40px
+                line-height: 38px
+                color: $asphalt
+                font-size: 30px
+                font-weight: 700
+                text-align: center
 
-                        a
-                            display: block
-                            position: absolute
-                            z-index: 10
-                            top: 0
-                            left: 0
-                            width: 40px
-                            height: 40px
-
-                            &:before
-                                display: block
-                                position: absolute
-                                z-index: 15
-                                content: '-'
-                                top: 2px
-                                left: 0
-                                width: 40px
-                                height: 40px
-                                line-height: 38px
-                                color: $asphalt
-                                font-size: 30px
-                                font-weight: 700
-                                text-align: center
-
-                            &.collapsed:before
-                                content: '+'
+              &.collapsed:before
+                content: '+'
 
 @media (min-width: 568px)
-    .experience
-        +element('resume')
-            .resume
-                +element('item')
-                    margin-bottom: 20px
+  .experience
+    +element('resume')
+      .resume
+        +element('item')
+          margin-bottom: 20px
 
-                    .panel
-                        width: calc(100% - 140px)
-                        margin-left: 140px
+          .panel
+            width: calc(100% - 140px)
+            margin-left: 140px
 
-                    .item
-                        +element('year')
-                            position: absolute
-                            top: 0
-                            left: 0
-                            margin: 0
+          .item
+            +element('year')
+              position: absolute
+              top: 0
+              left: 0
+              margin: 0
 
 @media (min-width: 768px)
-    .experience
-        +element('resume')
-            .resume
-                +element('item')
-                    &:before
-                        position: absolute
-                        content: ''
-                        width: 1px
-                        height: calc(100% + 20px)
-                        top: 0
-                        left: 170px
-                        border-left: 1px dashed #484848
+  .experience
+    +element('resume')
+      .resume
+        +element('item')
+          &:before
+            position: absolute
+            content: ''
+            width: 1px
+            height: calc(100% + 20px)
+            top: 0
+            left: 170px
+            border-left: 1px dashed #484848
 
-                    .panel
-                        width: calc(100% - 210px)
-                        margin-left: 210px
+          .panel
+            width: calc(100% - 210px)
+            margin-left: 210px
