@@ -4,27 +4,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Directional</title>
+  <title>Confirm</title>
   <!-- start:stylesheets -->
   <link rel="stylesheet" href="assets/css/main.css">
   <!-- end:/stylesheets -->
 </head>
 <body>
   <!-- start:main content -->
-  <div class="main-content" id="pages_directional">
+  <div class="main-content" id="pages_confirm">
     <!-- start:header -->
     <header class="header-main">
       <div class="block">
-        <div class="block__action">
-          <a href="pre-selected.html">
-            <img height="21" src="assets/images/icons/icon-arrow-left.svg" alt="icon">
-            <span>Back</span>
-          </a>
-        </div>
         <div class="block__header d-flex">
           <div class="title mr-auto">
-            <h4>Standard Pushback Procedure</h4>
-            <h5>Directional Graphic for “Pushback face South”</h5>
+            <h4>Confirm Pushback Procedure</h4>
+          </div>
+        </div>
+        <div class="block__content">
+          <div class="box d-flex">
+            <a href="failed-procedure-D49_south.html" class="mr-auto align-self-end">
+              <img width="70" src="assets/images/icons/icon-fail.svg" alt="icon">
+            </a>
+            <div class="description">
+              <h4>Aircraft Stand D49</h4>
+              <div class="info">
+                <span>Pushback face <strong>South</strong></span>
+              </div>
+            </div>
+            <a href="correct-procedure-D49_south.html" class="ml-auto align-self-end">
+              <img width="70" src="assets/images/icons/icon-correct.svg" alt="icon">
+            </a>
           </div>
         </div>
       </div>
@@ -36,14 +45,14 @@
       <div class="block">
         <div class="row">
           <div class="col-5">
-            <img class="img-fluid" src="assets/images/image-facesouth.png" alt="image">
+            <div class="block__scroll">
+              <img class="img-fluid" src="assets/images/directional/pushback-D49-south.png" alt="image">
+            </div>
           </div>
           <div class="col-7">
             <div class="block__scroll">
               <p>
-                - The aircraft (on idle thrust) shall be pushed back following the pushback until its
-                nosewheel is at the "EOP 17" position. The aircraft shall then be towed forward following the tow line
-                onto Taxiline A6 to face North until its nosewheel is at "EOT 18A" position. <br>
+                - The aircraft (on idle thrust) shall be pushed back onto Taxilane A6 to face South until its nosewheel is at the intersection of the aircraft stand lead-in line and Taxilane A6 centreline. The aircraft shall then be towed forward until its nosewheel is on the "EOT D49" position behind aircraft stand D49. <br>
                 - The aircraft may breakaway from there.
               </p>
               <p>
@@ -64,27 +73,5 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.js"></script>
   <script src="assets/js/style.js"></script>
   <!-- end:/javascripts -->
-
-  <!-- JavaScript part -->
-  <script type="text/javascript">
-    // Total seconds to wait
-    var seconds = 10;
-
-    function countdown() {
-      seconds = seconds;
-      if (seconds < 0) {
-        // Chnage your redirection link here
-        window.location = "redirect-page.html";
-      } else {
-        // Update remaining seconds
-        document.getElementById("countdown").innerHTML = seconds;
-        // Count down using javascript
-        // window.setTimeout("countdown()", 1000);
-      }
-    }
-
-    // Run countdown function
-    countdown();
-  </script>
 </body>
 </html>

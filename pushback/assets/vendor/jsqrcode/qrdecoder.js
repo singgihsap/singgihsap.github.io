@@ -11,7 +11,16 @@ function tick() {
         try {
             var result = qrcode.decode();
             console.log(result);
-            window.location = "pre-selected.html";
+            if (result === 'CAG pushback app trial - A15') {
+                // CAG pushback app trial - A15
+                window.location = "pre-selected_different-A15.html";
+            } else if (result === 'CAG pushback app trial - E20') {
+                // CAG pushback app trial - E20
+                window.location = "pre-selected-E20.html";
+            } else {
+                // CAG pushback app trial - D49
+                window.location = "pre-selected_different-D49.html";
+            }
             /* Video can now be stopped */
             video.pause();
             video.src = "";
