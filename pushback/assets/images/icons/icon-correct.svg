@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon/tick" transform="translate(-3.000000, -3.000000)">
+            <g id="Group-3" transform="translate(3.000000, 3.000000)">
+                <g id="Group">
+                    <path d="M22,3 L22,3 C32.4934102,3 41,11.5065898 41,22 L41,22 C41,32.4934102 32.4934102,41 22,41 L22,41 C11.5065898,41 3,32.4934102 3,22 L3,22 C3,11.5065898 11.5065898,3 22,3 Z" id="Rectangle-path" fill="#FFFFFF"></path>
+                    <path d="M20.1241921,30.4147465 C19.7186668,30.8202765 19.2117602,31.0230415 18.7048536,31.0230415 C18.197947,31.0230415 17.6910404,30.8202765 17.2855151,30.4147465 L10.8478013,24.0276498 L13.7371689,21.1382488 L18.7048536,26.1059908 L30.2623242,14.5483871 L33.1516918,17.437788 L20.1241921,30.4147465 Z M21.9997465,0 C9.83398809,0 0,9.83410138 0,22 C0,34.1653917 9.83398809,44 21.9997465,44 C34.165505,44 44,34.1653917 44,22 C44,9.83410138 34.165505,0 21.9997465,0 Z" id="Fill-1" fill="#0ABD21"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

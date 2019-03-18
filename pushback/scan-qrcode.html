@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Scan QRcode</title>
+  <!-- start:stylesheets -->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <!-- end:/stylesheets -->
+</head>
+<body>
+  <!-- start:main content -->
+  <div class="main-content" id="pages_scan">
+    <!-- start:header -->
+    <header>
+      <div class="block">
+        <div class="block__header d-flex">
+          <img class="logo mr-auto" src="assets/images/logo.svg" alt="logo">
+          <a href="index.html" class="icon">
+            <img src="assets/images/icons/icon-home.svg" alt="icon">
+          </a>
+          <a href="#" class="icon">
+            <img src="assets/images/icons/icon-power.svg" alt="icon">
+          </a>
+        </div>
+        <div class="block__body">
+          <h1>Welcome to the Pushback App.</h1>
+          <h4>Please scan the QR code on the Aircraft Stand to begin.</h4>
+        </div>
+      </div>
+    </header>
+    <!-- end:/header -->
+
+    <!-- start:content -->
+    <div class="content d-flex">
+      <div class="block">
+        <div class="block__box">
+          <h5 class="box__text-top">Verification Scanning</h5>
+          <video class="box__qr" id="video-preview">
+            <img src="assets/images/qr-border.svg" alt="icon">
+          </video>
+          <canvas id="qr-canvas" class="hidden" ></canvas>
+          <h5 class="box__text-bottom">Place the QR code inside area</h5>
+          <button class="btn btn-secondary btn-manual btn-block">Manual Select</button>
+        </div>
+      </div>
+    </div>
+    <!-- end:/content -->
+  </div>
+  <!-- end:/main content -->
+
+  <!-- start:javascripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.js"></script>
+  <script src="assets/js/style.js"></script>
+  <!-- end:/javascripts -->
+
+  <!-- start:javascripts for scan QRcode-->
+  <script type="text/javascript" src="assets/vendor/jsqrcode/grid.js"></script>
+  <script type="text/javascript" src="assets/vendor/jsqrcode/version.js"></script>
+  <script type="text/javascript" src="assets/vendor/jsqrcode/detector.js"></script>
+  <script type="text/javascript" src="assets/vendor/jsqrcode/formatinf.js"></script>
+  <script type="text/javascript" src="assets/vendor/jsqrcode/errorlevel.js"></script>
+  <script type="text/javascript" src="assets/vendor/jsqrcode/bitmat.js"></script>
+  <script type="text/javascript" src="assets/vendor/jsqrcode/datablock.js"></script>
+  <script type="text/javascript" src="assets/vendor/jsqrcode/bmparser.js"></script>
+  <script type="text/javascript" src="assets/vendor/jsqrcode/datamask.js"></script>
+  <script type="text/javascript" src="assets/vendor/jsqrcode/rsdecoder.js"></script>
+  <script type="text/javascript" src="assets/vendor/jsqrcode/gf256poly.js"></script>
+  <script type="text/javascript" src="assets/vendor/jsqrcode/gf256.js"></script>
+  <script type="text/javascript" src="assets/vendor/jsqrcode/decoder.js"></script>
+  <script type="text/javascript" src="assets/vendor/jsqrcode/qrcode.js"></script>
+  <script type="text/javascript" src="assets/vendor/jsqrcode/findpat.js"></script>
+  <script type="text/javascript" src="assets/vendor/jsqrcode/alignpat.js"></script>
+  <script type="text/javascript" src="assets/vendor/jsqrcode/databr.js"></script>
+  <script type="text/javascript" src="assets/vendor/jsqrcode/qrdecoder.js"></script>
+  <script type="text/javascript">
+    window.onload =  function() {
+      /* Ask for "environnement" (rear) camera if available (mobile), will fallback to only available otherwise (desktop).
+      * User will be prompted if (s)he allows camera to be started */
+      navigator.mediaDevices.getUserMedia({ video: { facingMode: "environment" }, audio: false }).then(function(stream) {
+        var video = document.getElementById("video-preview");
+        video.srcObject = stream;
+        video.setAttribute("playsinline", true); /* otherwise iOS safari starts fullscreen */
+        video.play();
+        setTimeout(tick, 100); /* We launch the tick function 100ms later (see next step) */
+      })
+      .catch(function(err) {
+        console.log(err); /* User probably refused to grant access*/
+      });
+    };
+  </script>
+  <!-- end:/javascripts for scan QRcode-->
+</body>
+</html>

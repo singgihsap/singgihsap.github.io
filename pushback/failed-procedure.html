@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Failed Procedure</title>
+  <!-- start:stylesheets -->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <!-- end:/stylesheets -->
+</head>
+<body>
+  <!-- start:main content -->
+  <div class="main-content" id="pages_failed">
+    <!-- start:header -->
+    <header class="header-main">
+      <div class="block">
+        <div class="block__header d-flex">
+          <div class="title mr-auto">
+            <h4 class="text-red">Incorrect Procedure</h4>
+          </div>
+        </div>
+        <div class="block__content">
+          <div class="box d-flex">
+            <div class="description mr-auto ml-auto">
+              <h4>Aircraft Stand B3</h4>
+              <div class="info">
+                <span>Pushback face <strong>South</strong></span>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="description">
+              <div class="row justify-content-center">
+                <div class="col-9">
+                  <h5>Please clarify with the Headset Man and wait for new instructions from ATCO. You will receive a notification. </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- end:/header -->
+
+    <!-- start:content -->
+    <div class="content d-flex">
+      <div class="block">
+        <div class="row justify-content-center">
+          <div class="col-5">
+            <p class="text-center font-size_20 color-white">You will be redirected to home in</p>
+            <h3 class="countdown" id="countdown">5</h3>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <a href="pre-selected.html" class="col-4 btn btn-grey margin-top-2">
+            <span class="text">Back to Status Page</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- end:/content -->
+  </div>
+  <!-- end:/main content -->
+
+  <!-- start:javascripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.js"></script>
+  <script src="assets/js/style.js"></script>
+  <!-- end:/javascripts -->
+
+  <!-- JavaScript part -->
+  <script type="text/javascript">
+    // Total seconds to wait
+    var seconds = 6;
+
+    function countdown() {
+      seconds = seconds - 1;
+      if (seconds < 0) {
+        // Chnage your redirection link here
+        window.location = "index.html";
+      } else {
+        // Update remaining seconds
+        document.getElementById("countdown").innerHTML = seconds;
+        // Count down using javascript
+        window.setTimeout("countdown()", 1000);
+      }
+    }
+
+    // Run countdown function
+    countdown();
+
+  </script>
+</body>
+</html>
